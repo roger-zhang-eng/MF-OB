@@ -14,6 +14,8 @@ class PinLockViewController: UIViewController {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
+        //pinCodeTextField.becomeFirstResponder()
+        //pinCodeTextField.keyboardType = UIKeyboardType.NumberPad
     }
 
     override func didReceiveMemoryWarning() {
@@ -21,6 +23,11 @@ class PinLockViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
+    override func viewWillAppear(animated: Bool) {
+        super.viewWillAppear(animated)
+        
+        //pinCodeTextField.keyboardType = UIKeyboardType.NumberPad
+    }
 
     /*
     // MARK: - Navigation
@@ -31,5 +38,5 @@ class PinLockViewController: UIViewController {
         // Pass the selected object to the new view controller.
     }
     */
-
+    
 }
